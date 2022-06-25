@@ -1,11 +1,12 @@
 import Badge from "@mui/material/Badge";
+import Menu from "@mui/material/Menu";
 import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
+import CART from "../cart.gif";
+import "./style.css";
 
 function Header() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -52,7 +53,29 @@ function Header() {
             "aria-labelledby": "basic-button",
           }}
         >
-          Your Cart is Empty!!
+          <div
+            className="card_details d-flex justify-content-center align-items-center"
+            style={{ width: "24rem", padding: 10, position: "relative" }}
+          >
+            <i
+              onClick={handleClose}
+              className="fas fa-close smallclose"
+              style={{
+                position: "absolute",
+                top: 2,
+                right: 20,
+                fontSize: 23,
+                cursor: "pointer",
+              }}
+            ></i>
+            <p style={{ fontSize: 22 }}>Your carts is empty</p>
+            <img
+              src={CART}
+              alt="loading"
+              className="emptycart__img"
+              style={{ width: "5rem", padding: 10 }}
+            />
+          </div>
         </Menu>
       </Navbar>
     </>
