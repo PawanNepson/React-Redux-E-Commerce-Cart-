@@ -6,7 +6,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
 import CART from "../cart.gif";
-import "./style.css";
 
 function Header() {
   const [anchorEl, setAnchorEl] = useState(null);
