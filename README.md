@@ -22,3 +22,5 @@ The main reason to use React Redux are:
 
 It encourages good 'React' architecture.
 It implements many performance optimizations internally, which allows to components re-render only when it actually needs.
+
+![Redux](https://codeit.mk/dam/jcr:2200ee35-a3b1-43c0-9589-e036ae9ea5d8/redux.1.2020-12-17-07-49-19.png)
