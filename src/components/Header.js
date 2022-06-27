@@ -4,12 +4,14 @@ import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
 import CART from "../cart.gif";
 import Table from "react-bootstrap/Table";
+import { DLT } from "../redux/actions/action";
 
 function Header() {
+  const dispatch = useDispatch();
   const getdata = useSelector((state) => state.cartreducer.carts);
   console.log(getdata);
   const [anchorEl, setAnchorEl] = useState(null);
@@ -19,6 +21,9 @@ function Header() {
   };
   const handleClose = () => {
     setAnchorEl(null);
+  };
+  const dlt = (id) => {
+    dispatch(DLT(id));
   };
   return (
     <>
@@ -92,6 +97,7 @@ function Header() {
                                 fontSize: 20,
                                 cursor: "pointer",
                               }}
+                              onClick={() => dlt(e.id)}
                             >
                               <i className="fas fa-trash smalltrash"></i>
                             </p>
@@ -103,7 +109,10 @@ function Header() {
                               cursor: "pointer",
                             }}
                           >
-                            <i className="fas fa-trash largetrash"></i>
+                            <i
+                              className="fas fa-trash largetrash"
+                              onClick={() => dlt(e.id)}
+                            ></i>
                           </td>
                         </tr>
                       </>
