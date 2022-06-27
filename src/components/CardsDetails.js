@@ -1,10 +1,13 @@
 import { color } from "@mui/system";
 import React, { useEffect, useState } from "react";
 import Table from "react-bootstrap/Table";
-import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { useParams, useNavigate } from "react-router-dom";
+import { DLT } from "../redux/actions/action";
 
 function CardsDetails() {
+  const history = useNavigate();
+  const dispatch = useDispatch();
   const { id } = useParams();
   const [data, setData] = useState([]);
   console.log(data);
@@ -20,6 +23,10 @@ function CardsDetails() {
   useEffect(() => {
     compare();
   }, [id]);
+  const dlt = (id) => {
+    dispatch(DLT(id));
+    history("/");
+  };
   return (
     <>
       <div className="container mt-2">
@@ -74,6 +81,7 @@ function CardsDetails() {
                           <p>
                             <strong>Remove</strong>{" "}
                             <i
+                              onClick={() => dlt(ele.id)}
                               className="fas fa-trash"
                               style={{
                                 color: "red",
