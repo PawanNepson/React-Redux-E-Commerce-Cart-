@@ -77,7 +77,11 @@ function CardsDetails() {
                           >
                             <span
                               style={{ fontSize: 24 }}
-                              onClick={() => remove(ele)}
+                              onClick={
+                                ele.qnty <= 1
+                                  ? () => dlt(ele.id)
+                                  : () => remove(ele)
+                              }
                             >
                               -
                             </span>
