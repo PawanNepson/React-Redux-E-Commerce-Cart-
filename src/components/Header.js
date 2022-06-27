@@ -74,11 +74,13 @@ function Header() {
                       <>
                         <tr>
                           <td>
-                            <img
-                              src={e.imgdata}
-                              alt="loading"
-                              style={{ width: "5rem", height: "5rem" }}
-                            />
+                            <NavLink to={`/cart/${e.id}`}>
+                              <img
+                                src={e.imgdata}
+                                alt="loading"
+                                style={{ width: "5rem", height: "5rem" }}
+                              />
+                            </NavLink>
                           </td>
                           <td>
                             <p>{e.rname}</p>
@@ -107,6 +109,7 @@ function Header() {
                       </>
                     );
                   })}
+                  <p className="text-center">Total : 300</p>
                 </tbody>
               </Table>
             </div>
