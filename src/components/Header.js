@@ -1,6 +1,6 @@
 import Badge from "@mui/material/Badge";
 import Menu from "@mui/material/Menu";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -11,6 +11,8 @@ import Table from "react-bootstrap/Table";
 import { DLT } from "../redux/actions/action";
 
 function Header() {
+  const [price, setPrice] = useState(0);
+  console.log(price);
   const dispatch = useDispatch();
   const getdata = useSelector((state) => state.cartreducer.carts);
   console.log(getdata);
@@ -25,6 +27,16 @@ function Header() {
   const dlt = (id) => {
     dispatch(DLT(id));
   };
+  const total = () => {
+    let price = 0;
+    getdata.map((ele, k) => {
+      price = ele.price + price;
+    });
+    setPrice(price);
+  };
+  useEffect(() => {
+    total();
+  }, [total]);
   return (
     <>
       <Navbar bg="dark" variant="dark" style={{ height: "60px" }}>
@@ -118,7 +130,7 @@ function Header() {
                       </>
                     );
                   })}
-                  <p className="text-center">Total : 300</p>
+                  <p className="text-center">Total : {price}</p>
                 </tbody>
               </Table>
             </div>
