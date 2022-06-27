@@ -74,7 +74,7 @@ function Header() {
                       <>
                         <tr>
                           <td>
-                            <NavLink to={`/cart/${e.id}`}>
+                            <NavLink to={`/cart/${e.id}`} onClick={handleClose}>
                               <img
                                 src={e.imgdata}
                                 alt="loading"
