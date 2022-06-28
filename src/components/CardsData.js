@@ -1,29 +1,28 @@
 const Cardsdata = [
   {
     id: 1,
-    rname: "Massala Theoryy",
-    imgdata:
-      "https://b.zmtcdn.com/data/pictures/9/18857339/8f53919f1175c08cf0f0371b73704f9b_o2_featured_v2.jpg?output-format=webp",
-    address: "North Indian, Biryani, Mughlai",
+    rname: "Thakali Khana Ghar",
+    imgdata: "https://pokharabazar.com/wp-content/uploads/2020/02/Th1.jpg",
+    address: "Nepal",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 1175 + order placed from here recently",
     price: 350,
-    rating: "3.8",
+    rating: "4.2",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
     qnty: 0,
   },
   {
     id: 2,
-    rname: "Jugaadi Adda",
+    rname: "Nepson Ko Momo Pasal",
     imgdata:
-      "https://b.zmtcdn.com/data/pictures/chains/5/19295245/089cbcf1d3307542c72f77272556b28b_o2_featured_v2.jpg?output-format=webp",
-    address: "Street Food",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXlXxXfDNUPPTTzhm7hkSqX9AGsuTE-2vQBg&usqp=CAU",
+    address: "Nepal,China",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 2525 + order placed from here recently",
-    price: 25,
+    price: 160,
     rating: "3.9",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
@@ -31,37 +30,36 @@ const Cardsdata = [
   },
   {
     id: 3,
-    rname: "La Milano Pizzeria",
-    imgdata:
-      "https://b.zmtcdn.com/data/pictures/chains/1/19708611/10f90d4a69678d98662514d173b29665_o2_featured_v2.jpg",
-    address: "Pizza, Fast Food, Pasta",
+    rname: "Afno Pizza",
+    imgdata: "https://images.slurrp.com/prod/articles/l55aflsvvoj.webp",
+    address: "Nepal",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 650 + order placed from here recently",
-    price: 70,
-    rating: "4.2",
+    price: 370,
+    rating: "4.7",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
     qnty: 0,
   },
   {
     id: 4,
-    rname: "Momoman",
+    rname: "Chang House",
     imgdata:
-      "https://b.zmtcdn.com/data/pictures/chains/1/113401/59f29399060caefcc575d59dc9402ce8_o2_featured_v2.jpg",
-    address: "Momos",
+      "https://www.gototibet.com/d/file/blog/2017-01-23/6b86d3d6c62bdf323771d2a59dec6e39.jpg",
+    address: "Nepal",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
     somedata: " 300 + order placed from here recently",
-    price: 70,
-    rating: "3.8",
+    price: 80,
+    rating: "4.3",
     arrimg:
       "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp",
     qnty: 0,
   },
   {
     id: 5,
-    rname: "Jassi De Parathe",
+    rname: "Roti House",
     imgdata:
       "https://b.zmtcdn.com/data/pictures/chains/5/110225/3978e28854b7496dbef9496546734811_o2_featured_v2.jpg",
     address: "North Indian",
@@ -91,9 +89,9 @@ const Cardsdata = [
   },
   {
     id: 7,
-    rname: "Hocco Eatery",
+    rname: "Panipuri House",
     imgdata:
-      "https://b.zmtcdn.com/data/pictures/chains/5/110155/811c01a5430d50d3260f77917da99e12_o2_featured_v2.jpg",
+      "https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_1000,c_limit/v1644216155/BW%20BLOG/Untitled-design---2022-02-07T121140.260_11zon.jpg",
     address: "North Indian, Fast Food",
     delimg:
       "https://b.zmtcdn.com/data/o2_assets/0b07ef18234c6fdf9365ad1c274ae0631612687510.png?output-format=webp",
